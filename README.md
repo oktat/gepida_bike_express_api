@@ -1,8 +1,6 @@
-# exapi
+# Gepida Bike Express API
 
-Exapi framework
-
-Express based REST API sablon
+Express based REST API for Gepida Bike.
 
 ## Install
 
