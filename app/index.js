@@ -4,13 +4,14 @@ const app = express()
 const fs = require('fs')
 const router = require('./routes/api')
 const config = require('../config/default.json')
+const cors = require('cors')
 
 const PORT = config.app.port || 8000
 
 const logfile = 'access.log'
 var accessLogStream = fs.createWriteStream(logfile, { flags: 'a' })
 app.use(morgan('dev', { stream: accessLogStream }))
-
+app.use(cors())
 app.use(express.json())
 app.use('/api', router);
 
