@@ -90,11 +90,19 @@ Endpoint:
 
 * /api/bikes/:id
 
+Example endpoint:
+
+* /api/bikes/1
+
 ### Update bike
 
 Endpoint:
 
 * /api/bikes/:id
+
+Example endpoint:
+
+* /api/bikes/1
 
 ```json
 {
@@ -110,3 +118,7 @@ Endpoint:
 Endpoint:
 
 * /api/bikes/:id
+
+Example endpoint:
+
+* /api/bikes/1
